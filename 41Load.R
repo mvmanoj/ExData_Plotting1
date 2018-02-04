@@ -1,7 +1,10 @@
 #Load the Input File into fileame
 filename <- "household_power_consumption.txt"
-data <- read.table(filename,header = TRUE,sep = ";
-                   ",colClasses = c("character", "character", rep("numeric",7)),na = "?")
+data <- read.table(filename,
+                   header = TRUE,
+                   sep = ";",
+                   colClasses = c("character", "character", rep("numeric",7)),
+                   na = "?")
 dim(data)
 attach(data)
 
